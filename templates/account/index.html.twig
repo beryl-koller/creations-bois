@@ -5,10 +5,10 @@
 {% block content %}
 
     <h1>Mon compte</h1>
-    <p>BIenvenue {{ app.user.firstname }} dans votre compte.</p>
+    <p>Bienvenue {{ app.user.firstname }} dans votre compte.</p>
 
     <hr>
-    <p>- Modifier mon mot de passe</p>
+    <a href="{{ path('account_password')}}">- Modifier mon mot de passe</a>
     <p>- Ajouter mes adresses</p>
     <p>- Mes commandes</p>
 
