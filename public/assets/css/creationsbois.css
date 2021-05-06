@@ -1,11 +1,14 @@
+body {
+    position: relative;
+}
+
 .navbar-item-custom, .navbar-item-custom a {
     color: #fff
 }
 
 .footer-custom {
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     width: 100%;
     background-color: #f0f0f0;
     padding-top: 20px
@@ -34,4 +37,9 @@
 .product-item .product-price {
     font-size: 14px;
     font-weight: bold;
+}
+
+.product-page-price {
+    font-weight: bold;
+    font-size: 19px;
 }
