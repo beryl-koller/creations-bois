@@ -17,7 +17,7 @@
 
         {{ formHtml|replace({ '[br]' : '<br>'})|raw }}
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 mt-4">
         <b>Récapitulatif de ma commande</b><br>
         <div class="order-summary">
             {% for key, product in cart %}
