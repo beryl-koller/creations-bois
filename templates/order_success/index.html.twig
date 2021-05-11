@@ -10,5 +10,5 @@
     <p>Votre commande sera livrée par <strong>{{ order.carrierName }}</strong> à l'adresse suivante:</p>
     <p>{{ order.delivery|raw }}</p>
     <hr>
-    <p>Pour suivre votre commande, veuillez vous rendre dans <a href="{{ path('account') }}">votre compte</a>.</p>
+    <p>Pour suivre votre commande, veuillez vous rendre dans <a href="{{ path('account_order') }}">votre compte</a>.</p>
 {% endblock %}
