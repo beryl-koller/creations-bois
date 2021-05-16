@@ -8,6 +8,9 @@
     <p>Bienvenue {{ app.user.firstname }} dans votre compte.</p>
 
     <hr>
+    {% if is_granted('ROLE_ADMIN')%}
+        <a href="/admin">- Accéder au backoffice</a><br>
+    {% endif %}
     <a href="{{ path('account_password')}}">- Modifier mon mot de passe</a><br>
     <a href="{{ path('account_address') }}">- Gérer mes adresses</a><br>
     <a href="{{ path('account_order') }}">- Mes commandes</a>
