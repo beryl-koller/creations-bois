@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nous contacter - Créations Bois{% endblock %}
+
+{% block content %}
+
+    {% for message in app.flashes('notice') %}
+        <div class="alert alert-info">{{ message }}</div>
+    {% endfor %}
+
+    <h2>Nous contacter</h2>
+    <div class="row mt-4">
+        <div class="col-md-8">{{ form(form) }}</div>
+        <div class="col-md-4">
+            <strong>Créations Bois</strong>
+            <hr>
+            06.00.00.00.00<br>
+            contact@creationsbois.com
+        </div>
+    </div>
+
+{% endblock %}
